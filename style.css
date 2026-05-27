@@ -109,3 +109,79 @@ footer {
     margin-right: 16px;
   }
 }
+
+
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 24px 0;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+  margin-left: 12px;
+}
+
+.hero section {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#dark-mode-toggle {
+  margin-left: 16px;
+  padding: 8px 12px;
+  border: 1px solid #111;
+  background: transparent;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .hero {
+  background: #1a1a1a;
+}
+
+.dark article {
+  background: #1f1f1f;
+}
+
+.dark nav a,
+.dark article a,
+.dark #contact a {
+  color: white;
+}
+
+.dark .button {
+  background: white;
+  color: black;
+}
+
+.dark .secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.dark footer {
+  background: #000;
+}
